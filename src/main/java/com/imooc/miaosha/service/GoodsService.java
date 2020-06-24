@@ -24,7 +24,10 @@ public class GoodsService {
 	}
 
 	public void reduceStock(GoodsVo goods) {
-		MiaoshaGoods g = new MiaoshaGoods();
+//		MiaoshaGoods g = new MiaoshaGoods();
+//		g.setGoodsId(goods.getId());
+//		goodsDao.reduceStock(g);
+		MiaoshaGoods g=new MiaoshaGoods();
 		g.setGoodsId(goods.getId());
 		goodsDao.reduceStock(g);
 	}
